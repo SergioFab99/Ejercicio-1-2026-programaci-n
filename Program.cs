@@ -20,9 +20,9 @@ namespace Progra2261
             Player player = new Player(name, health, damage);
             List<Enemy> enemies = new List<Enemy>
             {
-                new Enemy("Slime", 30, 8),
-                new Enemy("Skeleton", 50, 12),
-                new Enemy("Orc Boss", 80, 20)
+                new Enemy("Nicol de Coll", 30, 8),
+                new Enemy("Mateo Leon", 50, 12),
+                new Enemy("Giacomo Nakama", 80, 20)
             };
 
             GameManager game = new GameManager(player, enemies);
@@ -55,6 +55,10 @@ namespace Progra2261
                 else if (action == "2")
                 {
                     game.UsePotion();
+                }
+                else
+                {
+                    Console.WriteLine("Please choose only 1 or 2");
                 }
 
                 Console.WriteLine("\nPress any key for Enemy turn...");
